@@ -44,7 +44,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
 }
@@ -104,5 +104,97 @@ ul {
 
  .item svg:focus, .item svg:hover {
   color: red;
+  outline: none;
+}
+
+.addForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid orange;
+  margin: 0.25em 0;
+  background-color: white;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 44px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 2px solid orange;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+.addForm button {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border: 2px solid orange;
+  border-radius: 0.25rem;
+  margin-left: 0.25rem;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover,
+button:focus {
+  background-color: green;
+  color: white;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid orange;
+  margin: 0.25em 0;
+  background-color: white;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 44px);
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 44px);
+  min-height: 48px;
+  font-size: 1rem;  
+  padding: 0.25rem;
+  border: 2px solid orange;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+.searchForm button {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border: 2px solid orange;
+  border-radius: 0.25rem;
+  margin-left: 0.25rem;
+  cursor: pointer;
   outline: none;
 }
